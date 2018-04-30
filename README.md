@@ -11,6 +11,7 @@ Here is a nice Upload overview: https://docs.cloudfoundry.org/devguide/deploy-ap
 
 # Steps
 I am roughly following the steps from the book "Serverless Single Page Apps".
+(@Pragprog, @BenRady)
 
 ## Step 1
 Created a simple html site and loaded it up. The needed buildpack is "staticfile_buildpack"
