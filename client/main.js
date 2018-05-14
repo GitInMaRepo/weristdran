@@ -1,15 +1,16 @@
 var example = {};
 
-example.showOption = function() {
+example.showOption = function(parameter) {
     return $('<div class="option-page">')
 }
 
 example.showView = function(hash) {
+    var hashParts = hash.split('-');
     var routes = {
-        '#option-1' : example.showOption
+        '#option' : example.showOption
     }
-    var value = routes[hash];
-    if(value) {
-        return $('.view-container').empty().append(value());
+    var viewFun = routes[hashParts[0]];
+    if(viewFun) {
+        return $('.view-container').empty().append(viewFun(hashParts[1]));
     }
 }

@@ -8,4 +8,10 @@ describe('The router', function () {
         example.showView('');
         expect($('.view-container .landing-page').length).toEqual(1);
     });
+
+    it('passes a parameter to the view', function() {
+        spyOn(example, 'showOption');
+        example.showView('#option-42');
+        expect(example.showOption).toHaveBeenCalledWith('42');
+    });
 });
