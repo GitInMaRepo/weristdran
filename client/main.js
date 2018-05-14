@@ -1,6 +1,9 @@
 var example = {};
 
 example.appOnReady = function() {
+    window.onhashchange = function() {
+        example.showView(window.location.hash);
+    }
     example.showView(window.location.hash);
 }
 

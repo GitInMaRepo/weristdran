@@ -28,5 +28,12 @@ describe('The router', function () {
             example.appOnReady();
             expect(example.showView).toHaveBeenCalledWith(window.location.hash);
         });
+
+        it('invokes the hashchange event', function() {
+            example.appOnReady();
+            spyOn(example, 'showView');
+            $(window).trigger('hashchange')
+            expect(example.showView).toHaveBeenCalledWith(window.location.hash);
+        });
     });
 });
