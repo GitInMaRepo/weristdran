@@ -1,0 +1,57 @@
+body {
+    background-color: #333;
+    font-family: fantasy;    
+}
+
+h1 {
+    color: slategray;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+.heading {
+    background-color: darkred;
+    display: block;
+    text-align: left;
+    padding: 5px;
+} 
+
+/* The navbar container */
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar links */
+.navigation a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.markup {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.extra1 {
+    background: transparent url(./images/platonic-solids.png) top left no-repeat;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 222px;
+    height: 57px;
+}
