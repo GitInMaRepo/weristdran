@@ -40,6 +40,4 @@ Took a bit from this tutorial: https://www.w3schools.com/Css/
 
 And of course from http://www.csszengarden.com/
 
-Thanks to http://game-icons.net/ for the icons used under
-
-CC3 license https://creativecommons.org/licenses/by/3.0/
+Thanks to http://game-icons.net/ for the icons used under CC3 license https://creativecommons.org/licenses/by/3.0/
