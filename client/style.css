@@ -12,6 +12,10 @@ h2 {
     color: whitesmoke;
 }
 
+a {
+    color: darkred
+}
+
 .heading {
     background-color: darkred;
     display: block;
@@ -42,8 +46,7 @@ h2 {
 }
 
 .markup {
-    background-color: #333;
-    color: #f2f2f2;
+    background-color: bisque;
     text-align: center;
     padding: 14px 16px;
 }
@@ -55,4 +58,8 @@ h2 {
     right: 9px;
     width: 400px;
     height: 88px;
+}
+
+.footer {
+    color: #f2f2f2;
 }
