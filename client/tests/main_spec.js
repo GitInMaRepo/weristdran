@@ -21,4 +21,12 @@ describe('The router', function () {
             expect(view.text()).toEqual('Option #1 coming soon');
         });
     });
+
+    describe('The view', function() {
+        it('invokes the router on load', function() {
+            spyOn(example, 'showView');
+            example.appOnReady();
+            expect(example.showView).toHaveBeenCalledWith(window.location.hash);
+        });
+    });
 });

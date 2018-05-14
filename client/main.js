@@ -1,5 +1,9 @@
 var example = {};
 
+example.appOnReady = function() {
+    example.showView(window.location.hash);
+}
+
 example.showOption = function(parameter) {
     return $('<div class="option-page">').text('Option #' + parameter + ' coming soon')
 }
