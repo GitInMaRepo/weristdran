@@ -21,3 +21,13 @@ https://twitter.com/benrady
 # Steps
 ## Step 1
 Created a simple html site and loaded it up. The needed buildpack is "staticfile_buildpack"
+
+## Step 2
+Copied the testing environment from leanjs including the libs for Jasmine and jQuery. 
+For it all to work some <script src...> tags need to be added to main html site.
+Added Hashtag-Routing as described in the book to:
+- Learn Jasmine unit testing
+- Learn about Jasmine spyOn
+- Learn a bit of jQuery
+  
+Deployed again
