@@ -14,7 +14,9 @@ Here is a nice upload overview: https://docs.cloudfoundry.org/devguide/deploy-ap
 
 I am roughly following the steps from the book "Serverless Single Page Apps".
 
-https://twitter.com/pragprog
+
+
+https://pragprog.com/book/brapps/serverless-single-page-apps
 
 https://twitter.com/benrady
 
@@ -31,3 +33,10 @@ Added Hashtag-Routing as described in the book to:
 - Learn a bit of jQuery
   
 Deployed again
+
+## Step 3
+Messed around with styles and CSS. 
+Took a bit from this tutorial: https://www.w3schools.com/Css/
+And of course from http://www.csszengarden.com/.
+Thanks to http://game-icons.net/ for the icons used under 
+CC3 license https://creativecommons.org/licenses/by/3.0/
