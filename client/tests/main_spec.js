@@ -14,4 +14,11 @@ describe('The router', function () {
         example.showView('#option-42');
         expect(example.showOption).toHaveBeenCalledWith('42');
     });
+
+    describe('The option view', function() {
+        it('has a variable title', function() {
+            var view = example.showOption('1');
+            expect(view.text()).toEqual('Option #1 coming soon');
+        });
+    });
 });

@@ -1,7 +1,7 @@
 var example = {};
 
 example.showOption = function(parameter) {
-    return $('<div class="option-page">')
+    return $('<div class="option-page">').text('Option #' + parameter + ' coming soon')
 }
 
 example.showView = function(hash) {
