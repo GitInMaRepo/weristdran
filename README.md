@@ -41,3 +41,5 @@ Took a bit from this tutorial: https://www.w3schools.com/Css/
 And of course from http://www.csszengarden.com/
 
 Thanks to http://game-icons.net/ for the icons used under CC3 license https://creativecommons.org/licenses/by/3.0/
+
+Deployed again, of course. Make sure every needed file in the same folder as the HTML file is prefixed in there with "./" or the files will not be found on Cloudfoundries linux container. 
