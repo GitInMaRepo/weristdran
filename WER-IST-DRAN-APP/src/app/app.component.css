@@ -1,0 +1,78 @@
+h1 {
+    color: black;
+    padding-left: 30px;
+}
+
+div {
+    font-family: fantasy;
+    background-color: darkslategrey;
+}
+
+.edges {
+    background-color: darkred;
+    height: 20px;
+    border-radius: 10px;
+}
+
+#upperEdgeBreakout {
+    background: darkred url(../../images/dice.png) top left no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    width: 400px;
+    height: 88px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#titleBreakout {
+    background: darkred;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 400px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#playButton {
+    background: darkred url(../../images/return-arrow.png) center center no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 480px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+#nextPlayer {
+    background: darkred;
+    position: absolute;
+    top: 120px; 
+    left: 30px;
+    right: 8px;
+    height: 60px;   
+    border-radius: 10px;
+}
+
+#initiativeList {
+    background: blanchedalmond;
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    bottom: 40px;
+    right: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#loweredge {
+    bottom: 10px;
+    position: absolute;
+    right:8px;
+    left:8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}

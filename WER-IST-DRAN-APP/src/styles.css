@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: darkslategrey
+}
+
+.edges {
+    background-color: darkred;
+    height: 20px;
+}
+
+#upperEdgeBreakout {
+    background: darkred url(../images/dice.png) top left no-repeat;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 400px;
+    height: 88px;
+}
