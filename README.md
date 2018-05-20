@@ -1,5 +1,7 @@
 # weristdran
 Training project for cloud based web development. And also an initiative counter for RPGs
+The notes in this readme will probably self-evident to most experienced programmers, but 
+I am just starting.
 
 # Links
 ## Cloudfoundry:
@@ -43,3 +45,12 @@ And of course from http://www.csszengarden.com/
 Thanks to http://game-icons.net/ for the icons used under CC3 license https://creativecommons.org/licenses/by/3.0/
 
 Deployed again, of course. Make sure every needed file in the same folder as the HTML file is prefixed in there with "./" or the files will not be found on Cloudfoundries linux container. 
+
+## Step 4
+Created the real SPA, got unit tests to run and of course- deployed again.
+- I am using Angular/Cli to create new projects
+- ng test to run the jasmine tests. A browser needs to be started. 
+- ng serve to run the app locally
+- ng build --prod to deploy to "dist" folder
+
+Used staticfile_buildpack for deployment again from "dist" folder.
