@@ -1,13 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { InitiativeEntryComponent } from './initiative-entry/initiative-entry.component';
+import { InitiativeEntriesComponent } from './initiative-entries/initiative-entries.component';
+
+const appRoutes: Routes = [
+  { path: '', component: InitiativeEntriesComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    InitiativeEntryComponent
+    InitiativeEntriesComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,15 @@
+<div id='playButton'>
+</div>
+<div id='nextPlayer'>
+</div>
+<div id='initiativeList'>
+    <div *ngFor="let entry of initiativeEntries; let i = index" id="entry{{i}}" class="initativeEntry">
+        <button id="edit{{i}}" class="button buttonInList editButton">EDT</button>
+        <h3>{{entry}}</h3>
+        <button id="delete{{i}}" class="button buttonInList deleteButton">DEL</button>
+        <hr>
+    </div>
+    <button id="add" class="button"><h3>Eintrag hinzufügen</h3></button>
+</div>
+
+
