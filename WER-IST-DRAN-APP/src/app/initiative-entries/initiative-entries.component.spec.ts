@@ -42,5 +42,21 @@ describe('InitiativeEntryComponent', () => {
       const compiled = fixture.debugElement.nativeElement;
       expect(compiled.querySelector('#add')).toBeTruthy();
     });
+
+    it('should add a new entry', () => {
+      const compiled = fixture.debugElement.nativeElement;
+      component.addNewEntry();
+      fixture.detectChanges();
+      expect(compiled.querySelector('#entry1')).toBeTruthy();
+    });
+
+    it('should remove an entry', () => {
+      const compiled = fixture.debugElement.nativeElement;
+      component.addNewEntry();
+      fixture.detectChanges();
+      component.deleteEntry(1);
+      fixture.detectChanges();
+      expect(compiled.querySelector('#entry1')).toBeNull();
+    });
   });
 });

@@ -61,6 +61,12 @@ div {
     border-radius: 10px;
 }
 
+.initativeList {
+    background: blanchedalmond;
+    margin: 3%;
+    width: 94%;  
+}
+
 .initativeEntry {
     background: blanchedalmond;
     padding: 5px;

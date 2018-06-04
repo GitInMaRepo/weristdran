@@ -9,9 +9,17 @@ export class InitiativeEntriesComponent implements OnInit {
 
   constructor() { }
 
-  initiativeEntries : string[] = [];
+  initiativeEntries: string[] = [];
 
   ngOnInit() {
-    this.initiativeEntries[0] = "Neuer Eintrag";
+    this.initiativeEntries[0] = 'Neuer Eintrag';
   }
-}
+
+  addNewEntry() {
+    this.initiativeEntries[this.initiativeEntries.length] = 'Neuer Eintrag';
+  }
+
+  deleteEntry(id: number) {
+    this.initiativeEntries.splice(id, 1);
+  }
+ }
