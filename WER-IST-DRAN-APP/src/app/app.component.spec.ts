@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { InitiativeEntriesComponent } from './initiative-entries/initiative-entries.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
 
@@ -10,6 +11,9 @@ describe('AppComponent', () => {
         AppComponent,
         InitiativeEntriesComponent
       ],
+      imports: [
+        FormsModule
+      ]
     }).compileComponents();
   }));
 
@@ -24,7 +28,7 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
   }));
-  
+
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();

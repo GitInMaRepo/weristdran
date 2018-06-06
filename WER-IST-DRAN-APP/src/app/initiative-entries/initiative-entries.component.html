@@ -3,11 +3,15 @@
 <div id='nextPlayer'>
 </div>
 <div id='initiativeList'>
+    <button id="add" class="button" (click)="addNewEntry()"><h3>Eintrag hinzufügen</h3></button>
     <table class="initativeList">
         <ng-container *ngFor="let entry of initiativeEntries; let i = index">
             <tr id="entry{{i}}" class="initativeEntry">
-                <td width="10%"><button id="edit{{i}}" class="button buttonInList editButton">EDT</button></td>
-                <td width="80%"><h3>{{entry}}</h3></td>
+                <td width="10%"><button id="edit{{i}}" class="button buttonInList editButton" (click)="showEditor(i)">EDT</button></td>
+                <td width="80%">
+                    <input [(ngModel)]="lastInput" id="input{{i}}" [style.visibility]="(editorVisible && (visibleEditorNumber == i)) ? 'visible' : 'hidden'">
+                    <h3 id="view{{i}}" [style.visibility]="(editorVisible && (visibleEditorNumber == i)) ? 'hidden' : 'visible'">{{entry}}</h3>
+                </td>
                 <td width="10%"><button id="delete{{i}}" class="button buttonInList deleteButton" (click)="deleteEntry(i)">DEL</button></td>
             </tr>
             <tr>
@@ -15,7 +19,4 @@
             </tr>
         </ng-container>
     </table>
-    <button id="add" class="button" (click)="addNewEntry()"><h3>Eintrag hinzufügen</h3></button>
 </div>
-
-

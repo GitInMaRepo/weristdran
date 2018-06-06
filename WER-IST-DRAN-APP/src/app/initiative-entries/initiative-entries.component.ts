@@ -10,6 +10,9 @@ export class InitiativeEntriesComponent implements OnInit {
   constructor() { }
 
   initiativeEntries: string[] = [];
+  editorVisible = false;
+  visibleEditorNumber = 0;
+  lastInput: string;
 
   ngOnInit() {
     this.initiativeEntries[0] = 'Neuer Eintrag';
@@ -21,5 +24,13 @@ export class InitiativeEntriesComponent implements OnInit {
 
   deleteEntry(id: number) {
     this.initiativeEntries.splice(id, 1);
+  }
+
+  showEditor(id: number) {
+    if (this.editorVisible) {
+      this.initiativeEntries[id] = this.lastInput;
+    }
+    this.editorVisible = !this.editorVisible;
+    this.visibleEditorNumber = id;
   }
  }
