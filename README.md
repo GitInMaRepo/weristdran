@@ -1,6 +1,6 @@
 # weristdran
 Training project for cloud based web development. And also an initiative counter for RPGs
-The notes in this readme will probably self-evident to most experienced programmers, but 
+The notes in this readme will probably be self-evident to most experienced programmers, but 
 I am just starting.
 
 # Links
@@ -53,4 +53,20 @@ Created the real SPA, got unit tests to run and of course- deployed again.
 - ng serve to run the app locally
 - ng build --prod to deploy to "dist" folder
 
-Used staticfile_buildpack for deployment again from "dist" folder.
+Used staticfile_buildpack for deployment from "dist" folder.
+
+## Step 5
+Created a first version of the SPA that is satisfactory to me.
+Since I had a really hard time finding good tutorials/resources for testing Angular
+components from html to component code and back I tested some things directly in the component code.
+I do not know if that is by design- I think I will have to have another go at testing with Jasmine.
+The main lessons I took with me are:
+- configureTestingModule loads all modules & other dependencies like the @NgModule declarations and imports
+in app.module.ts
+- "fixture" is a crated component
+- "fixture.componentInstance" lets you access the component class directly
+- "fixture.debugElement.nativeElement" lets you access the DOM
+- If you did anything with the nativeElement, fixture.detectChanges() is needed
+- very often, the opposite of the .IsDefined matcher is not .IsUndefined but .IsNull
+
+Deployed again
